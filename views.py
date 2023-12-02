@@ -181,8 +181,10 @@ def portfolio_page(request,id):
                 'change':c                
             }
             portfolio_data.append(data)
+            print("hello")
             
         return Response(portfolio_data)
+    
         
 @api_view(['GET'])
 def searching(request, sl):
